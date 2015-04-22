@@ -10,6 +10,11 @@ class StatusRepositoryTest extends \Codeception\TestCase\Test
      */
     protected $tester;
 
+    /**
+     * @var StatusRepository
+     */
+    protected $repo;
+
     protected function _before()
     {
         $this->repo = new StatusRepository;
