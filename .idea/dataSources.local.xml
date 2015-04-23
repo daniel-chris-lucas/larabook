@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="MySQL - Larabook" uuid="cedd54d0-2dde-4c8f-a67e-d986fbe4105a">
+      <secret-storage>master_key</secret-storage>
+      <first-sync>true</first-sync>
+      <user-name>homestead</user-name>
+    </data-source>
+  </component>
+</project>
