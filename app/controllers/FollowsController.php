@@ -1,6 +1,8 @@
 <?php
 
-class FollowersController extends \BaseController {
+use Larabook\Users\FollowUserCommand;
+
+class FollowsController extends \BaseController {
 
 	/**
 	 * Follow a user.
@@ -9,10 +11,13 @@ class FollowersController extends \BaseController {
 	 */
 	public function store()
 	{
-		// id of the user to follow
-        // id of the authenticated user
-        $input = array_add(Input::get(), 'userId', Auth::id());
+		$input = array_add(Input::get(), 'userId', Auth::id());
+
         $this->execute(FollowUserCommand::class, $input);
+
+        Flash::success('You are now following this user.');
+
+        return Redirect::back();
 	}
 
 
