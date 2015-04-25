@@ -18,5 +18,14 @@
 
     <script src="//code.jquery.com/jquery.js"></script>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+    <script>
+        $('.comments__create-form').on('keydown', function (e) {
+            if (e.keyCode == 13) {
+                e.preventDefault();
+                $(this).submit();
+            }
+        });
+    </script>
 </body>
 </html>
